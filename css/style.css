@@ -1,0 +1,135 @@
+/* common */
+body{
+    font-family: 'Pretendard';
+}
+.d-flex{
+    display: flex;
+}
+.d-none{
+    display: none;
+}
+.text-center{
+    text-align: center;
+}
+
+
+
+/* layout */
+a{
+    text-decoration: none;
+    color: rgb(19, 154, 172);
+}
+
+h1 a{
+    color: rgb(72, 130, 202);
+    font-size: 2em;
+}
+
+h1 a:hover{
+    color: rgb(248, 199, 241);
+}
+
+.title{
+    background-color: rgb(240, 248, 255, 0.8);
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: skyblue;
+    padding: 2em 3em;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0.5rem;
+    right: 0.5em;
+    left: 0.5rem;
+}
+
+#list li{
+    padding-left: 1em;
+    font-weight: 300;
+}
+
+#list li a{
+    transition: 0.3s;
+}
+
+#list li::after{
+    content:"";
+    display: block;
+    height: 2px;
+    width: 0px;
+    transition: 0.3s;
+}
+
+#list li:nth-child(1)::after{
+    background-color: rgb(72, 130, 202);
+}
+
+#list li:nth-child(2)::after{
+    background-color: rgb(72, 130, 202);
+}
+
+#list li:nth-child(3)::after{
+    background-color: rgb(72, 130, 202);
+}
+
+#list li:hover::after{
+    width: 100%;
+}
+
+#list li:hover a{
+    font-size: 1.2em;
+}
+
+#list li:hover:nth-child(1) a{
+    color: rgb(72, 130, 202);
+}
+
+#list li:hover:nth-child(2) a{
+    color: rgb(72, 130, 202);
+}
+
+#list li:hover:nth-child(3) a{
+    color: rgb(72, 130, 202);
+}
+
+.child1, .child2, .child3{
+    height: calc(100vh - 80px);
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(248, 199, 241, 0.6);
+    font-size: 1.3em;
+}
+
+.ft{
+    padding: 1em;
+    background-color: rgb(240, 248, 255, 0.95);
+}
+
+.sns{
+    justify-content: center;
+    color: black;
+}
+
+.sns a{
+    justify-content: center;
+    color: white;
+}
+
+.sns li{
+    padding: 8px;
+    border-radius: 20px;
+    margin: 0px 35px;
+}
+
+.sns li:nth-child(1){
+    background-color: rgb(238, 102, 202);
+}
+
+.sns li:nth-child(2){
+    background-color: rgb(27, 31, 219);
+}
+
+.sns li:nth-child(3){
+    background-color: rgb(207, 11, 11);
+}
